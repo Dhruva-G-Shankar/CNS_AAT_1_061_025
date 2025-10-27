@@ -9,7 +9,7 @@ This project demonstrates secure client-server communication using encrypted mes
           │    (1) Send Encrypted Message           │
           ├────────────────────────────────────────>│
           │                                         │
-          │    (2) Send Encrypted Acknowledgement    │
+          │    (2) Send Encrypted Acknowledgement   │
           │<────────────────────────────────────────┤
           │                                         │
 
@@ -28,11 +28,24 @@ Ciphertext: ITSSG
 Plaintext: HELLO
 
 ## Comparision Table:
-Feature           |  C Implementation       |  Python Implementation
-------------------+-------------------------+-----------------------
-Socket Setup      |  Winsock2 API, threads  |  socket library       
-Encryption Logic  |  Manual char mapping    |  dict/list mapping    
-Execution         |  Single/main/threaded   |  Separate scripts/main
-Error Handling    |  Manual                 |  Exceptions           
+| Feature           |  C Implementation       |  Python Implementation |
+| ----------------- | ----------------------- | ---------------------  |
+| Socket Setup      |  Winsock2 API, threads  |  socket library        |   
+| Encryption Logic  |  Manual char mapping    |  dict/list mapping     |
+| Execution         |  Single/main/threaded   |  Separate scripts/main |
+| Error Handling    |  Manual                 |  Exceptions            |
+| Code Length       |  Long, verbose          |  Short, readable       |
+| Portability       |  Windows-specific code  |  Cross-platform        |
+| Performance       |  Fast, low overhead     |  Fast, network-limited |
+       
+
+## Output & Demonstration
+Sample output:
+```bash
+Server listening on port 9000...
+Connection from ('127.0.0.1', random_port)
+Received (decrypted): Hello Server
+Server response (decrypted): Acknowledged: Hello Server ```
+
 
 
