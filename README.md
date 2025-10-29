@@ -45,7 +45,9 @@ Sample output:
 Server listening on port 9000...
 Connection from ('127.0.0.1', random_port)
 Received (decrypted): Hello Server
-Server response (decrypted): Acknowledged: Hello Server ```
+Server response (decrypted): Acknowledged: Hello Server
+```
+
 
 
 
